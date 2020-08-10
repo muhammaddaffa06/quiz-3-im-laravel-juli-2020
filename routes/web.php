@@ -12,13 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.depan');
 });
 
-Route::get('/items/create', 'ItemController@create'); // menampilkan halaman form
-Route::post('/items', 'ItemController@store'); // menyimpan data
-Route::get('/items', 'ItemController@index'); // menampilkan semua
-Route::get('/items/{id}', 'ItemController@show'); // menampilkan detail item dengan id 
-Route::get('/items/{id}/edit', 'ItemController@edit'); // menampilkan form untuk edit item
-Route::put('/items/{id}', 'ItemController@update'); // menyimpan perubahan dari form edit
-Route::delete('/items/{id}', 'ItemController@destroy'); // menghapus data dengan id
+Route::get('/Proyek/create', 'ProyekController@create'); // menampilkan halaman form
+Route::post('/Proyek', 'ProyekController@store'); // menyimpan data
+Route::get('/Proyek', 'ProyekController@index'); // menampilkan semua
+Route::get('/Proyek/{id}', 'ProyekController@show'); // menampilkan detail Proyek dengan id 
+Route::get('/Proyek/{id}/edit', 'ProyekController@edit'); // menampilkan form untuk edit Proyek
+Route::put('/Proyek/{id}', 'ProyekController@update'); // menyimpan perubahan dari form edit
+Route::delete('/Proyek/{id}', 'ProyekController@destroy'); // menghapus data dengan id
